@@ -79,10 +79,11 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: bold;
     margin-bottom: 24px;
     line-height: 1.1;
+    white-space: nowrap;
 }
 
 .hero-description {
@@ -172,7 +173,7 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
     max-width: 1400px;
     margin: 0 auto;
@@ -305,6 +306,258 @@ section {
 .feature-card p {
     color: #6b7280;
     line-height: 1.6;
+}
+
+/* Infrastructure Detail Section */
+.infra-detail {
+    background: white;
+    padding: 96px 0;
+}
+
+.infra-hero-image {
+    margin-top: 32px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infra-hero-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.challenges-section,
+.applications-section {
+    margin-top: 96px;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.challenge-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.challenge-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.challenge-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.challenge-stat {
+    font-size: 12px;
+    color: #dc2626;
+    background: #fef2f2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.application-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.application-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.application-icon {
+    font-size: 32px;
+    background: #eff6ff;
+    padding: 12px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.application-info h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.application-info p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.application-features {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.application-features li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.application-features li::before {
+    content: '✓';
+    color: #10b981;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.section-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
+/* Demo Section */
+.demo {
+    background: linear-gradient(to bottom, #eff6ff, white);
+    padding: 96px 0;
+}
+
+.demo-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demo-video {
+    position: relative;
+}
+
+.video-placeholder {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.video-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: white;
+}
+
+.demo-info h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 24px;
+}
+
+.demo-info > p {
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 32px;
+    line-height: 1.7;
+}
+
+.demo-features {
+    margin-bottom: 32px;
+}
+
+.demo-feature {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.demo-feature-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.demo-feature-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.demo-feature-info p {
+    font-size: 14px;
+    color: #6b7280;
 }
 
 /* About Section */
@@ -562,13 +815,18 @@ section {
         display: none;
     }
     
+    .hero-title {
+        white-space: normal;
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
     
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .features-grid {
@@ -593,11 +851,32 @@ section {
         grid-template-columns: 1fr;
         gap: 16px;
     }
+    
+    .challenges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .application-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .demo-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 0 16px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
     }
     
     section {
@@ -612,6 +891,10 @@ section {
     .feature-card,
     .contact-form {
         padding: 20px;
+    }
+    
+    .challenges-grid {
+        grid-template-columns: 1fr;
     }
 }
 

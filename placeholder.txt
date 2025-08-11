@@ -1,0 +1,21 @@
+# Placeholder images needed:
+
+## Service Images (PNG format):
+- mitemiru-forest.png (森林モニタリングシステム)
+- mitemiru-embankment.png (盛土監視システム) 
+- mitemiru-infrastructure.jpg (インフラ診断システム)
+- mitemiru-disaster.jpg (災害監視システム)
+
+## Background Images:
+- top-background.jpg (ヒーローセクション背景)
+
+## About Section Images:
+- mms-technology.jpg (MMS技術)
+- bridge-inspection.jpg (橋梁点検)
+- infra-eye-system.jpg (インフラアイシステム)
+- water-infrastructure.jpg (上下水道インフラ)
+
+## Infrastructure Detail:
+- mitemiru-infra-overview.png (インフラ概要画像)
+
+Note: These are placeholder filenames. Replace with actual images when available.
